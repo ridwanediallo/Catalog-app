@@ -9,6 +9,11 @@ attr_accessor :genre, :author, :source, :label, :publish_date
     @publish_date = publish_date
    end
 
+   def label=(label)
+    @label = label
+    label.items(self) unless @label.items.include?(label)
+   end
+
    def move_to_archive
     archived = true if can_be_archived?
    end
