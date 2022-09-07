@@ -12,7 +12,7 @@ def menu
   puts "1- List all books"
   puts "2- List all music albums"
   puts "3- List all movies"
-  puts "4- List of games"
+  puts "4- List all games"
   puts "5- List all genres"
   puts "6- List all labels"
   puts "7- List all authors"
@@ -21,7 +21,8 @@ def menu
   puts "10- Add a music album"
   puts "11- Add a movie"
   puts "12- Add a game"
-  puts "13- Exit"
+  puts "13- Add a label"
+  puts "14- Exit"
 end
 
 class Main
@@ -30,7 +31,7 @@ class Main
     @input = 0
   end
   def launch_app
-    while @input != 13
+    while @input != 14
       menu
       options
     end
