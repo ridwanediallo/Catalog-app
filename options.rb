@@ -2,6 +2,7 @@ def options
   @input = gets.chomp.to_i
   case @input
   when 1
+    @app.list_books
   when 2
   when 3
   when 4
@@ -10,6 +11,7 @@ def options
   when 7
   when 8
   when 9
+    @app.add_book
   when 10
   when 11
   when 12
