@@ -13,6 +13,11 @@ attr_accessor :genre, :author, :source, :label, :publish_date
     archived = true if can_be_archived?
    end
 
+   def add_genre(genre)
+    @genre = genre
+    genre.items << self unless genre.items.include?(self)
+   end
+
    private
 
    def can_be_archived?
