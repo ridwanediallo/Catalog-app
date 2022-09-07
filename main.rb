@@ -22,6 +22,7 @@ def Main
     @app = App.new
     @input = 0
   end
+
   def launch_app
     while @input != 13
       menu
