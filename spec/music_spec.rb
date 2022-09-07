@@ -1,7 +1,7 @@
 require './classes/musicalbum'
 describe Book do
   before :each do
-    @musicalbum = MusicAlbum.new 'Freedom',  '2019', true
+    @musicalbum = MusicAlbum.new 'Freedom', '2019', true
   end
   it 'should print the alboum name' do
     expect(@musicalbum.name).to eq 'Freedom'
