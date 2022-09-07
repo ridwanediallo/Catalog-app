@@ -8,6 +8,7 @@ def options
   when 4
   when 5
   when 6
+    @app.list_labels
   when 7
   when 8
   when 9
@@ -16,6 +17,8 @@ def options
   when 11
   when 12
   when 13
+    @app.add_label
+  when 14
     puts "Thanks for visiting. See you next!"
   else
     puts "Sorry! Your option is not available."
