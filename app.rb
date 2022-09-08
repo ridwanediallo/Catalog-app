@@ -1,6 +1,7 @@
 require_relative "classes/book"
 require_relative "classes/label"
 require_relative "data_persist/book_persist"
+require_relative "data_persist/label_persist"
 require_relative "data_persist/handle_json"
 require_relative "factory"
 
@@ -9,10 +10,12 @@ class App
     @books = []
     @labels = []
     load_books
+    load_labels
   end
   include Methodes_factory
   include BookPersist
   include HandlerFile
+  include LabelPersist
 
   def take_input_label(label)
     print "#{label}: "
