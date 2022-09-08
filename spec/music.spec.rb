@@ -1,5 +1,5 @@
 require './classes/musicalbum'
-describe Book do
+describe MusicAlbum do
   before :each do
     @musicalbum = MusicAlbum.new 'Freedom', '2019', true
   end
