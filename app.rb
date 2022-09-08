@@ -25,7 +25,9 @@ class App
   def add_book
     publisher = take_input_label("Publisher")
     publish_date = take_input_label("Publish_date")
+    puts "Enter Good or Bad for the cover state"
     cover_state = take_input_label("Cover_state")
+    puts "Is the book archived? (true/false)"
     archived = take_input_label("Archived")
     insert_book(publisher, publish_date, cover_state, archived)
   end
