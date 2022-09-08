@@ -2,11 +2,19 @@
   {
     "publisher" : "Ridwan",
     "publish_date" : "02-20-2020",
-    "cover_state" : "good"
+    "cover_state" : "good",
+    "archived" : null
   },
   {
     "publisher" : "Me",
     "publish_date" : "02-02-2020",
-    "cover_state" : "Great"
+    "cover_state" : "Great",
+    "archived" : null
+  },
+  {
+    "publisher" : "Ridwan",
+    "publish_date" : "02-20-2022",
+    "cover_state" : "red",
+    "archived" : "false"
   }
 ]
