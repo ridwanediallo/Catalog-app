@@ -35,13 +35,14 @@ class App
     publisher = take_input_label("Publisher")
     publish_date = take_input_label("Publish_date")
     cover_state = take_input_label("Cover_state")
-    insert_book(publisher, publish_date, cover_state)
+    archived = take_input_label("Archived")
+    insert_book(publisher, publish_date, cover_state, archived)
   end
 
 
   def list_books
     @books.each do |book|
-      puts "[#{book.class}] Publisher: #{book.publisher} Publish_date: #{book.publisher} Cover_state: #{book.cover_state}"
+      puts "[#{book.class}] Publisher: #{book.publisher} Publish_date: #{book.publisher} Cover_state: #{book.cover_state} Archived: #{book.archived}"
     end
   end
 

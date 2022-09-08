@@ -9,7 +9,8 @@ module BookPersist
       books_arr << {
         publisher: book.publisher,
         publish_date: book.publish_date,
-        cover_state: book.cover_state
+        cover_state: book.cover_state,
+        archived: book.archived
       }
     end
     write_json(books_arr, "books.json")
@@ -18,6 +19,6 @@ module BookPersist
     file = File.read("books.json")
     JSON
       .parse(file)
-      .each { |book| @books.push(Book.new(book["publisher"], book["publish_date"], book["cover_state"])) }
+      .each { |book| @books.push(Book.new(book["publisher"], book["publish_date"], book["cover_state"], book["archived"])) }
   end
 end
