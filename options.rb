@@ -20,6 +20,7 @@ def options
     @app.add_label
   when 14
     @app.persist_book
+    @app.persist_label
     puts "Thanks for visiting. See you next!"
   else
     puts "Sorry! Your option is not available."
