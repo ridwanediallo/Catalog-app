@@ -45,5 +45,4 @@ class App
     @labels.each do |label|
       puts "[#{label.class}] Title: #{label.title} Color: #{label.color}"
     end
-  end
 end
