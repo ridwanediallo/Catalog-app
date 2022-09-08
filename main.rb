@@ -22,7 +22,8 @@ def menu
   puts "11- Add a movie"
   puts "12- Add a game"
   puts "13- Add a label"
-  puts "14- Exit"
+  puts "14- Add a Genre"
+  puts "15- Exit"
 end
 
 class Main
