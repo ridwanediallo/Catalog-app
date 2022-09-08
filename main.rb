@@ -33,7 +33,7 @@ class Main
   end
 
   def launch_app
-    while @input != 14
+    while @input != 15
       menu
       options
     end
