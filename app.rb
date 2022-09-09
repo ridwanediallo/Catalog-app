@@ -8,6 +8,10 @@ require_relative "classes/musicalbum"
 require_relative "classes/genre"
 require_relative "data_persist/music_persist"
 require_relative "data_persist/genre_persist"
+require_relative "classes/author"
+require_relative "classes/game"
+require_relative "data_persist/author_persist"
+require_relative "data_persist/game_persist"
 
 class App
   def initialize
@@ -15,9 +19,13 @@ class App
     @labels = []
     @music_Album = []
     @genres = []
+    @authors = []
+    @games = []
 
     load_books
     load_labels
+    load_author
+    load_game
   end
   include Methodes_factory
   include BookPersist
@@ -25,22 +33,23 @@ class App
   include LabelPersist
   include MusicPersist
   include GenrePersist
+  include GamePersist
+  include AuthorPersist
 
-  def take_input_label(label)
+  def take_input(label)
     print "#{label}: "
     gets.chomp
   end
 
   def add_book
-    publisher = take_input_label("Publisher")
-    publish_date = take_input_label("Publish_date")
+    publisher = take_input("Publisher")
+    publish_date = take_input("Publish_date")
     puts "Enter Good or Bad for the cover state"
-    cover_state = take_input_label("Cover_state")
+    cover_state = take_input("Cover_state")
     puts "Is the book archived? (true/false)"
-    archived = take_input_label("Archived")
+    archived = take_input("Archived")
     insert_book(publisher, publish_date, cover_state, archived)
   end
-
 
   def list_books
     @books.each do |book|
@@ -48,10 +57,9 @@ class App
     end
   end
 
-
   def add_label
-    title = take_input_label("Title")
-    color = take_input_label("Color")
+    title = take_input("Title")
+    color = take_input("Color")
     insert_label(title, color)
   end
 
@@ -62,12 +70,11 @@ class App
   end
 
   def add_music
-    name = take_input_label("Name")
-    publish_date = take_input_label("Publish_date")
-    on_spotify = take_input_label("On_spotify?")
+    name = take_input("Name")
+    publish_date = take_input("Publish_date")
+    on_spotify = take_input("On_spotify?")
     insert_music(name, publish_date, on_spotify)
   end
-
 
   def list_music
     @music_Album.each do |music|
@@ -76,15 +83,35 @@ class App
   end
 
   def add_genre
-    names = take_input_label("Comedy , Thriller")
+    names = take_input("Comedy , Thriller")
     insert_genre(names)
   end
 
   def list_genre
-    @genres.each do |genre|
-      puts "[#{genre.class}] Names: #{genre.names} "
+    @genres.each { |genre| puts "[#{genre.class}] Names: #{genre.names} " }
+  end
+
+  def add_author
+    first_name = take_input("First_name")
+    last_name = take_input("Last_name")
+    insert_author(first_name, last_name)
+  end
+
+  def list_authors
+    @authors.each do |author|
+      puts "[#{author.class}] First_name: #{author.first_name} Last_name: #{author.last_name}"
     end
   end
 
+  def add_game
+    multiplayer = take_input("Multiplayer")
+    last_played_at = take_input("Last_played_at")
+    insert_game(multiplayer, last_played_at)
+  end
 
+  def list_games
+    @games.each do |game|
+      puts "[#{game.class}] Multiplayer: #{game.multiplayer} Last_played_at: #{game.last_played_at}"
+    end
+  end
 end
