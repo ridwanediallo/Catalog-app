@@ -6,7 +6,7 @@ module GenrePersist
   def persist_genre
     genres_arr = []
     @genres.each do |g|
-      genres_arr << { names: m.names }
+      genres_arr << { names: g.names }
     end
     write_json(genres_arr, "genre.json")
   end
@@ -15,6 +15,6 @@ module GenrePersist
     file = File.read("genre.json")
     JSON
       .parse(file)
-      .each { |g| @ganres.push(Genre.new(g["names"])) }
+      .each { |g| @genres.push(Genre.new(g["names"])) }
   end
 end
