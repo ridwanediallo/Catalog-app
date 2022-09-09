@@ -26,8 +26,6 @@ def options
   when 15
     @app.persist_book
     @app.persist_label
-    @app.persist_genre
-    @app.persist_music
     puts "Thanks for visiting. See you next!"
   else
     puts "Sorry! Your option is not available."
