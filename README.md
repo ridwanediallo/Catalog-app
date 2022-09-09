@@ -1,56 +1,38 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Ruby group capstone - Catalog of my things
 
 > Description the project.
 
+In this project, we create a console app that help to keep a record of different types of things you own: books, music albums, movies, and games. Everything based on the UML class diagram presented below. The data stored in JSON files but also prepare a database with tables structure analogical to program's class structure.
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- Ruby
 
-## Live Demo (if available)
+## Live Demo (coming soon)
 
-[Live Demo Link](https://livedemo.com)
+# Clone the prject
 
-
-## Getting Started
-
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-
-To get a local copy up and running follow these simple example steps.
-
-### Prerequisites
-
-### Setup
-
-### Install
-
-### Usage
-
-### Run tests
-
-### Deployment
-
-
-
-## Authors
+https://github.com/ridwanediallo/Catalog-app.git
 
 👤 **Author1**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+| 👤 Name | Github                                       | Twitter                                  | LinkedIn                                             |
+| ------- | -------------------------------------------- | ---------------------------------------- | ---------------------------------------------------- |
+| Ridwan  | [@Ridwan]](https://github.com/ridwanediallo) | [@Ridwan]](https://twitter.com/RidwaneD) | [@Ridwan](https://www.linkedin.com/in/ridwan-diallo) |
 
 👤 **Author2**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+| 👤 Name             | Github                               | Twitter                                 | LinkedIn                                                  |
+| ------------------- | ------------------------------------ | --------------------------------------- | --------------------------------------------------------- |
+| abdelrahman mohamed | [@Abdo](https://github.com/Abdo9826) | [@Abdo](https://twitter.com/abodyalex1) | [@Abdo](https://www.linkedin.com/in/abdelruhman-mihamed/) |
+
+👤 **Author3**
+
+| 👤 Name       | Github                                           | Twitter                                            | LinkedIn                                                     |
+| ------------- | ------------------------------------------------ | -------------------------------------------------- | ------------------------------------------------------------ |
+| shahnawaz ali | [@shahnawaza75](https://github.com/shahnawaza75) | [@shahnawaza75@](https://twitter.com/shahnawaza75) | [@shahnawaza75](https://www.linkedin.com/in/shahnawaz-ali5/) |
 
 ## 🤝 Contributing
 
