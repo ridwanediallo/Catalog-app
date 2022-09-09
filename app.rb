@@ -18,6 +18,8 @@ class App
 
     load_books
     load_labels
+    load_music
+    load_genre
   end
   include Methodes_factory
   include BookPersist
