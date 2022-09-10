@@ -5,7 +5,7 @@ require_relative "../classes/game"
 module GamePersist
     def persist_game
       game_arr = []
-      @game.each do |m|
+      @games.each do |m|
         game_arr << {
           multiplayer: m.multiplayer,
           last_played_at: m.last_played_at,
@@ -17,7 +17,6 @@ module GamePersist
       file = File.read("game.json")
       JSON
         .parse(file)
-        .each { |m| @game.push(Game.new(m["multiplayer"], m["last_played_at"])) }
+        .each { |m| @games.push(Game.new(m["multiplayer"], m["last_played_at"])) }
     end
   end
-  
