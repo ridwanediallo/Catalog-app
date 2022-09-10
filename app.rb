@@ -1,23 +1,23 @@
-require_relative "classes/book"
-require_relative "classes/label"
-require_relative "data_persist/book_persist"
-require_relative "data_persist/label_persist"
-require_relative "data_persist/handle_json"
-require_relative "factory"
-require_relative "classes/musicalbum"
-require_relative "classes/genre"
-require_relative "data_persist/music_persist"
-require_relative "data_persist/genre_persist"
-require_relative "classes/author"
-require_relative "classes/game"
-require_relative "data_persist/author_persist"
-require_relative "data_persist/game_persist"
+require_relative 'classes/book'
+require_relative 'classes/label'
+require_relative 'data_persist/book_persist'
+require_relative 'data_persist/label_persist'
+require_relative 'data_persist/handle_json'
+require_relative 'factory'
+require_relative 'classes/musicalbum'
+require_relative 'classes/genre'
+require_relative 'data_persist/music_persist'
+require_relative 'data_persist/genre_persist'
+require_relative 'classes/author'
+require_relative 'classes/game'
+require_relative 'data_persist/author_persist'
+require_relative 'data_persist/game_persist'
 
 class App
   def initialize
     @books = []
     @labels = []
-    @music_Album = []
+    @music_album = []
     @genres = []
     @authors = []
     @games = []
@@ -29,7 +29,7 @@ class App
     load_genre
     load_music
   end
-  include Methodes_factory
+  include MethodesFactory
   include BookPersist
   include HandlerFile
   include LabelPersist
@@ -44,12 +44,12 @@ class App
   end
 
   def add_book
-    publisher = take_input("Publisher")
-    publish_date = take_input("Publish_date")
-    puts "Enter Good or Bad for the cover state"
-    cover_state = take_input("Cover_state")
-    puts "Is the book archived? (true/false)"
-    archived = take_input("Archived")
+    publisher = take_input('Publisher')
+    publish_date = take_input('Publish_date')
+    puts 'Enter Good or Bad for the cover state'
+    cover_state = take_input('Cover_state')
+    puts 'Is the book archived? (true/false)'
+    archived = take_input('Archived')
     insert_book(publisher, publish_date, cover_state, archived)
   end
 
@@ -60,8 +60,8 @@ class App
   end
 
   def add_label
-    title = take_input("Title")
-    color = take_input("Color")
+    title = take_input('Title')
+    color = take_input('Color')
     insert_label(title, color)
   end
 
@@ -72,9 +72,9 @@ class App
   end
 
   def add_music
-    name = take_input("Name")
-    publish_date = take_input("Publish_date")
-    on_spotify = take_input("On_spotify?")
+    name = take_input('Name')
+    publish_date = take_input('Publish_date')
+    on_spotify = take_input('On_spotify?')
     insert_music(name, publish_date, on_spotify)
   end
 
@@ -85,7 +85,7 @@ class App
   end
 
   def add_genre
-    names = take_input("Comedy , Thriller")
+    names = take_input('Comedy , Thriller')
     insert_genre(names)
   end
 
@@ -94,8 +94,8 @@ class App
   end
 
   def add_author
-    first_name = take_input("First_name")
-    last_name = take_input("Last_name")
+    first_name = take_input('First_name')
+    last_name = take_input('Last_name')
     insert_author(first_name, last_name)
   end
 
@@ -106,8 +106,8 @@ class App
   end
 
   def add_game
-    multiplayer = take_input("Multiplayer")
-    last_played_at = take_input("Last_played_at")
+    multiplayer = take_input('Multiplayer')
+    last_played_at = take_input('Last_played_at')
     insert_game(multiplayer, last_played_at)
   end
 

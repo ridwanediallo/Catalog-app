@@ -9,5 +9,4 @@ describe Game do
   it 'should print the game last_played_at' do
     expect(@game.last_played_at).to eq 'rock'
   end
-
 end

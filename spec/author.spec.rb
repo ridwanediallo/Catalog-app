@@ -9,5 +9,4 @@ describe Author do
   it 'should print the Author last_name' do
     expect(@author.last_name).to eq 'Ali'
   end
-
 end

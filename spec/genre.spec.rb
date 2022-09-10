@@ -14,5 +14,4 @@ describe Genre do
   it 'should print the genre items' do
     expect(@genre.items).to eq []
   end
-
 end

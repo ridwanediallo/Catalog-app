@@ -1,5 +1,3 @@
-
-
 def options
   @input = gets.chomp.to_i
   case @input
@@ -34,8 +32,8 @@ def options
     @app.persist_author
     @app.persist_music
     @app.persist_genre
-    puts "Thanks for visiting. See you next!"
+    puts 'Thanks for visiting. See you next!'
   else
-    puts "Sorry! Your option is not available."
+    puts 'Sorry! Your option is not available.'
   end
 end
