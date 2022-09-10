@@ -86,4 +86,3 @@ CREATE TABLE movies(
   FOREIGN KEY (genre_id) REFERENCES genres(id),
   FOREIGN KEY (author_id) REFERENCES authors(id),
   FOREIGN KEY (source_id) REFERENCES sources(id)
-);
