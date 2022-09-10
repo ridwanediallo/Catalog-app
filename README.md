@@ -10,7 +10,9 @@ In this project, we create a console app that help to keep a record of different
 
 - Ruby
 
-## Live Demo (coming soon)
+## Video link
+
+https://drive.google.com/file/d/12Cd8dHX3RrUAz08ciXBYiZ80wsqX_15K/view?usp=sharing
 
 # Clone the prject
 
