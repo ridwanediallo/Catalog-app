@@ -10,5 +10,11 @@
     "publish_date" : "12-03-1992",
     "cover_state" : "bad",
     "archived" : "false"
+  },
+  {
+    "publisher" : "Abdo",
+    "publish_date" : "02-20-2035",
+    "cover_state" : "Good",
+    "archived" : "false"
   }
 ]

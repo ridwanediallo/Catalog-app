@@ -6,5 +6,9 @@
   {
     "title" : "Hello",
     "color" : "World"
+  },
+  {
+    "title" : "me",
+    "color" : "red"
   }
 ]

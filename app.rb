@@ -26,6 +26,8 @@ class App
     load_labels
     load_author
     load_game
+    load_genre
+    load_music
   end
   include Methodes_factory
   include BookPersist
