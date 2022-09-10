@@ -1,7 +1,7 @@
 require_relative '../classes/book'
 
 describe Book do
-  let(:book) { Book.new('Ridwan', '02-02-2020', 'Good') }
+  let(:book) { Book.new('Ridwan', '02-02-2020', 'Good', false) }
 
   describe '#book' do
     it 'should instanciate a new book' do
