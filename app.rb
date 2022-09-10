@@ -79,7 +79,7 @@ class App
   end
 
   def list_music
-    @music_Album.each do |music|
+    @music_album.each do |music|
       puts "[#{music.class}] Name: #{music.name} Publish_date: #{music.publish_date} On_spotify: #{music.on_spotify}"
     end
   end
