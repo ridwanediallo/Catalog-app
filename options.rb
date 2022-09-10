@@ -1,3 +1,5 @@
+
+
 def options
   @input = gets.chomp.to_i
   case @input
