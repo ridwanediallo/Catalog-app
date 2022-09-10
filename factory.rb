@@ -20,4 +20,14 @@ module Methodes_factory
     puts 'genre inserted successfully.'
   end
 
+    def insert_author(first_name, last_name)
+      @authors << Author.new(first_name, last_name)
+      puts 'Label inserted successfully.'
+  end
+
+    def insert_game(multiplayer, last_played_at)
+      @games << Game.new(multiplayer, last_played_at)
+      puts 'Label inserted successfully.'
+  end
+
 end
